@@ -9,11 +9,11 @@ async function getBooks(id:string){
 }
 
 export default async function Books({
-	params: {id},
+	params,
 }: {
 	params: {id: string}
 }){
-	const books = await getBooks(id);
+	const books = await getBooks(params.id);
 	const list = books.results.books;
 
   return <div className={style.bookPage}>
