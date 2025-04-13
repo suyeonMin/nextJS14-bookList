@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bowlby+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.homepage {
+	padding: 50px 30px;
+	min-height: calc(100vh - 50px);
+	text-align: center;
+	background-color: #ced6e0;
+
+	h1 {
+		margin-bottom: 55px;
+		font-size: 38px;
+	}
+
+	ul {
+		display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;
+		li {
+			padding: 10px;
+			border: 1px dotted #333;
+			background-color: #f1f2f6; box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+			transition: all .3s ease-in;
+			a {
+				font-family: "Atma", system-ui;
+				font-size: 18px;
+				transition: color .2s ease-in;
+			}
+			&:hover {
+				border: 1px solid #84817a;
+				background-color: #84817a;
+				transform: translateY(-10px);
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
